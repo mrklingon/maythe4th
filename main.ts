@@ -1,4 +1,15 @@
-let ships = [
+input.onButtonPressed(Button.A, function () {
+    basic.showString("Jedi " + jedi._pickRandom())
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showString("Jedi " + jedi._pickRandom() + ("" + Travel._pickRandom() + planets._pickRandom()))
+    basic.showString("in " + ships._pickRandom())
+})
+let Travel: string[] = []
+let jedi: string[] = []
+let planets: string[] = []
+let ships: string[] = []
+ships = [
 "Kalee Bastion",
 "Gand Navigator",
 "Calamity",
@@ -10,7 +21,7 @@ let ships = [
 "Devaron Marauder",
 "Messenger"
 ]
-let planets = [
+planets = [
 "Lelsodi",
 "Asem",
 "Chevu",
@@ -22,7 +33,7 @@ let planets = [
 "Vit",
 "Yus"
 ]
-let jedi = [
+jedi = [
 "Dansinc Romerai",
 "Calrya Popwadh",
 "Micdom Connbene",
@@ -34,6 +45,7 @@ let jedi = [
 "Giantyle Permilb",
 "Brygabr Vinerr"
 ]
+Travel = ["escapes from", "returns from ", "flies to"]
 basic.forever(function () {
 	
 })
